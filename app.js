@@ -79,23 +79,6 @@ app.get("/sale", (req, res) => {
   });
 });
 
-app.get("/data", (req, res) => {
-  res.render("data", {
-    location: "Data Page",
-    author: "Vikas",
-    semNo1: "I",
-    semNo2: "II",
-    semNo3: "III",
-    semNo4: "IV",
-    semNo5: "V",
-    tgpa1: 3.3,
-    tgpa2: 2.4,
-    tgpa3: 3.8,
-    tgpa4: 4.3,
-    tgpa5: 5.6,
-  });
-});
-
 app.get("/delivery", (req, res) => {
   res.render("delivery", {
     title: "iDestiny - Delivery",
@@ -125,5 +108,3 @@ app.get("*", (req, res) => {
 app.listen(port, () => {
   console.log(`Server running succesfully at localhost:${port}`);
 });
-
-//if code not running then type this nodemon filename.js -e js,hbs
