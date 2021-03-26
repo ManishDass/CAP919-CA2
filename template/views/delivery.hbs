@@ -5,19 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/delivery.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <title>{{location}}</title>
+    <title>{{title}}</title>
   </head>
   <body>
     {{>header}}
 
     <div class="notice">
         <h2>Important Notice</h2>
-        <p>In response to COVID-19, our delivery partners are offering contactless delivery. Drivers may issue a one time password to the mobile phone number provided at time of purchase to satisfy the signature requirement. And, as always, delivery will be fast and free.
-
-            Delivery to certain PIN codes is currently unavailable due to local COVID-19 restrictions.</p>
+        <p>{{NoticeText}}</p>
     </div>
 
     
@@ -25,14 +24,14 @@
       <div class="del-one">
         <h1>New Address</h1>
       </div>
-        <form>
+        <form action="/bill">
             <div class="line-one">
           <label>First Name</label>
-          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="First Name" required />
           <label>Address Line 1</label>
-          <input type="text" placeholder="House/Flat No, Street Name" />
+          <input type="text" placeholder="House/Flat No, Street Name" required />
           <label>State</label>
-          <select name="state" id="state" class="form-control">
+          <select name="state" id="state" class="form-control" required >
             <option value="Andhra Pradesh">Andhra Pradesh</option>
             <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
             <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -71,21 +70,21 @@
             <option value="West Bengal">West Bengal</option>
             </select>
             <label>Zip Code</label>
-            <input type="text" placeholder="Zip Code">
+            <input type="number" placeholder="Zip Code" required >
 
-            <button id="save">Save</button>
+            <button id="save" type="submit">Save</button>
         </div>
 
         <div class="line-two">
             <label for="Last Name">Last Name </label>
-            <input type="text" placeholder="Last Name">
+            <input type="text" placeholder="Last Name" required >
             <label for="Last Name">Address Line 2 </label>
-            <input type="text" placeholder="Area, Landmark">
+            <input type="text" placeholder="Area, Landmark" required >
             <label for="Last Name">City </label>
-            <input type="text" placeholder="City Name">
+            <input type="text" placeholder="City Name" required >
             <label for="Last Name">Phone </label>
-            <input type="text" placeholder="Phone">
-            <button id="cancel">Cancel</button>
+            <input type="number" placeholder="Phone" required >
+            <button id="cancel" type="reset">Cancel</button>
         </div>
 
         </form>    
