@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/bill.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>{{location}}</title>
+  </head>
+  <body>
+
+    {{>header}}
+
+    <div class="heading-order">
+      <h3>Your order</h3>
+    </div>
+    <div class="bill-container">
+      <div class="bill-item-one">
+        <div class="bill-row">
+          <p><b>Product</b></p>
+        </div>
+        <div class="bill-row">
+          <p>New iPad Air (4th Gen)<b>x1</b></p>
+          <p>Color: Space Grey</p>
+          <p>Storage: 64GB</p>
+          <p>Connectivity: Wi-Fi</p>
+        </div>
+        <div class="bill-row"><p>Subtotal</p></div>
+        <div class="bill-row"><p>Shipping</p></div>
+        <div class="bill-row"><p>Total</p></div>
+      </div>
+      <div class="bill-item-two">
+        <div class="bill-row">
+          <p><b>Subtotal</b></p>
+        </div>
+        <div class="bill-row margin"><p>₹54,900</p></div>
+        <div class="bill-row"><p>₹54,900</p></div>
+        <div class="bill-row"><p>Free shipping</p></div>
+        <div class="bill-row">
+          <p><b>₹54,900</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="payment-method-container">
+      <div class="method-heading"><h3>Select Payment Method</h3></div>
+      <div class="method-one">
+        <input class="r-button" type="radio" name="option" />
+        <p><b>Cash on Delivery</b></p>
+      </div>
+      <div class="method-two">
+        <input class="r-button" type="radio" name="option" />
+        <p><b>Credit Card/Debit Card/NetBanking</b></p>
+      </div>
+      <div class="tc">
+        <input type="checkbox" required />
+        <p>
+          I agree to the Terms & Conditions of placing an order on www.apple.in
+          *
+        </p>
+      </div>
+
+      <div class="place-order">
+        <a class="buy_now" href="#">Buy Now</a>
+      </div>
+    </div>
+
+     {{>footer}}
+
+  </body>
+</html>

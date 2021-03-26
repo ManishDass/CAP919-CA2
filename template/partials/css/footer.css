@@ -1,0 +1,45 @@
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: whitesmoke;
+  height: 40vh;
+  background-color: #24252a;
+  font-size: 14px;
+}
+
+.row-one {
+  margin-top: 6vh;
+  line-height: 15px;
+}
+
+.row-two {
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+}
+
+i {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.row-three {
+  margin-top: 5vh;
+  letter-spacing: 5px;
+  font-size: 13px;
+}
+
+.footer-text-bg {
+  font-size: 200px;
+  opacity: 0.03;
+  position: absolute;
+  margin: 0;
+}
+
+.row-one > p:first-child {
+  margin-top: 0;
+  margin-bottom: -10px;
+}
